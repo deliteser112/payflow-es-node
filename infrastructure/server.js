@@ -1,5 +1,9 @@
 const express = require('express')
+const dotenv = require('dotenv')
 const InMemoryUserRepository = require('./in-memory-user.repository')
+
+dotenv.config()
+
 const app = express()
 
 const userRepository = new InMemoryUserRepository()
